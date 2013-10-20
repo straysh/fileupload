@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+#upload ul,#upload li{list-style: none;margin: 0;padding: 0;}
+.avatarArea{width: 150px;height: 150px;border:2px dashed #ccc;border-radius: 5px;background: #BFFFBB;text-align: center;}
+.avatarArea:before{content: '';display: inline-block;vertical-align: middle;width: 0;height: 100%;}
+.avatarArea-view{width: 150px;height: 150px;border:2px dashed #ccc;border-radius: 5px;background: #BFFFBB;text-align: center;}
+.avatarArea-view:before{content: '';display: inline-block;width: 0;}
+#tip-dialog{font-size: 14px;display: inline-block;vertical-align: middle;}
+.showarea-li .showarea-li-imgcon{display: inline-block;overflow: hidden;vertical-align: middle;}
+.showarea-li .showarea-li-progresscon{display: inline-block;width: 150px;text-align: center;}
+.showarea-li .showarea-li-progresscon .percent{display:block;width:100%;height:10px;background:#ccc;}
+.showarea-li .showarea-li-remove{display: inline-block;overflow: hidden;text-decoration: none;cursor: pointer;}
+.showarea-li .showarea-li-remove:hover{background: #ddd;border-right: 2px dashed #ddd;border-radius:4px;}
