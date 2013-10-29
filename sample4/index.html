@@ -1,25 +1,20 @@
-<link rel="stylesheet" href="/fileupload/css/uploadAvatar.css" />
 <script src="/assets/js/jquery-1.8.3.min.js"></script>
 <script src="/fileupload/js/jquery.filedrop.js"></script>
+<script src="/fileupload/js/uploader.js"></script>
+<style>
+#upload{width:150px;height:150px;background:#BFFFBB}
+</style>
+<button id="start_upload">123</button>
 <div id="upload"></div>
-<script src="/fileupload/js/uploadAvatar.js"></script>
 <script type="text/javascript">
 <!--
-var files = [1,2,3];
-files.splice(1,1);
-console.log(files);
 $().ready(function(){
-	$('#upload').click(function(){
-		$.ajax({
-			url: '/fileupload/upload.php',
-			type: 'post',
-			data:{img:'img'},
-			headers: {name:'testjpg'},
-			success: function(data){
-				;
-			},
+	$.uploader.init({
+		$el: $('#upload')
 		});
-	});
+	$('#start_upload').click(function(){
+		$.uploader.upload({img_type:1});
+		});
 });
 //-->
 </script>
